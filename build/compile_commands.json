@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/Applications/CS488Project/build",
+  "command": "/usr/bin/clang -DGLEW_NO_GLU -DGLEW_STATIC -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/CS488.dir/src/libtarga.c.o -c /Applications/CS488Project/src/libtarga.c",
+  "file": "/Applications/CS488Project/src/libtarga.c",
+  "output": "CMakeFiles/CS488.dir/src/libtarga.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/CS488.dir/src/main.cpp.o -c /Applications/CS488Project/src/main.cpp",
+  "file": "/Applications/CS488Project/src/main.cpp",
+  "output": "CMakeFiles/CS488.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glew",
+  "command": "/usr/bin/clang -DGLEW_NO_GLU -DGLEW_STATIC -I/Applications/CS488Project/external/glew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /Applications/CS488Project/external/glew/src/glew.c",
+  "file": "/Applications/CS488Project/external/glew/src/glew.c",
+  "output": "external/glew/CMakeFiles/libglew_static.dir/src/glew.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glew",
+  "command": "/usr/bin/clang -DGLEW_BUILD -DGLEW_NO_GLU -Dlibglew_shared_EXPORTS -I/Applications/CS488Project/external/glew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -o CMakeFiles/libglew_shared.dir/src/glew.c.o -c /Applications/CS488Project/external/glew/src/glew.c",
+  "file": "/Applications/CS488Project/external/glew/src/glew.c",
+  "output": "external/glew/CMakeFiles/libglew_shared.dir/src/glew.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Applications/CS488Project/external/glfw/src/context.c",
+  "file": "/Applications/CS488Project/external/glfw/src/context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Applications/CS488Project/external/glfw/src/init.c",
+  "file": "/Applications/CS488Project/external/glfw/src/init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Applications/CS488Project/external/glfw/src/input.c",
+  "file": "/Applications/CS488Project/external/glfw/src/input.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Applications/CS488Project/external/glfw/src/monitor.c",
+  "file": "/Applications/CS488Project/external/glfw/src/monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /Applications/CS488Project/external/glfw/src/platform.c",
+  "file": "/Applications/CS488Project/external/glfw/src/platform.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Applications/CS488Project/external/glfw/src/vulkan.c",
+  "file": "/Applications/CS488Project/external/glfw/src/vulkan.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Applications/CS488Project/external/glfw/src/window.c",
+  "file": "/Applications/CS488Project/external/glfw/src/window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Applications/CS488Project/external/glfw/src/egl_context.c",
+  "file": "/Applications/CS488Project/external/glfw/src/egl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Applications/CS488Project/external/glfw/src/osmesa_context.c",
+  "file": "/Applications/CS488Project/external/glfw/src/osmesa_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /Applications/CS488Project/external/glfw/src/null_init.c",
+  "file": "/Applications/CS488Project/external/glfw/src/null_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /Applications/CS488Project/external/glfw/src/null_monitor.c",
+  "file": "/Applications/CS488Project/external/glfw/src/null_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /Applications/CS488Project/external/glfw/src/null_window.c",
+  "file": "/Applications/CS488Project/external/glfw/src/null_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /Applications/CS488Project/external/glfw/src/null_joystick.c",
+  "file": "/Applications/CS488Project/external/glfw/src/null_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Applications/CS488Project/external/glfw/src/cocoa_time.c",
+  "file": "/Applications/CS488Project/external/glfw/src/cocoa_time.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /Applications/CS488Project/external/glfw/src/posix_module.c",
+  "file": "/Applications/CS488Project/external/glfw/src/posix_module.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Applications/CS488Project/external/glfw/src/posix_thread.c",
+  "file": "/Applications/CS488Project/external/glfw/src/posix_thread.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Applications/CS488Project/external/glfw/src/cocoa_init.m",
+  "file": "/Applications/CS488Project/external/glfw/src/cocoa_init.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Applications/CS488Project/external/glfw/src/cocoa_joystick.m",
+  "file": "/Applications/CS488Project/external/glfw/src/cocoa_joystick.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Applications/CS488Project/external/glfw/src/cocoa_monitor.m",
+  "file": "/Applications/CS488Project/external/glfw/src/cocoa_monitor.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Applications/CS488Project/external/glfw/src/cocoa_window.m",
+  "file": "/Applications/CS488Project/external/glfw/src/cocoa_window.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Applications/CS488Project/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Applications/CS488Project/external/glfw/src/nsgl_context.m",
+  "file": "/Applications/CS488Project/external/glfw/src/nsgl_context.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+}
+]
