@@ -1,7 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Applications/CS488Project -B /Applications/CS488Project/cmake-build-release
-GLVND not supported. Try find OpenGL legacy
--- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
--- Including Cocoa support
--- Configuring done
--- Generating done
--- Build files have been written to: /Applications/CS488Project/cmake-build-release

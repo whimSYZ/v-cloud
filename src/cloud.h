@@ -1,7 +1,3 @@
-// =======================================
-// CS488/688 base code
-// (written by Toshiya Hachisuka)
-// =======================================
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -347,15 +343,11 @@ void cursorPosFunc(GLFWwindow *window, double mouse_x, double mouse_y)
     }
 }
 
-// main window
-// you probably do not need to modify this in A0 to A3.
-class CS488Window
+class CloudWindow
 {
 public:
-    // put this first to make sure that the glInit's constructor is called before the one for CS488Window
-
-    CS488Window() {}
-    virtual ~CS488Window() {}
+    CloudWindow() {}
+    virtual ~CloudWindow() {}
 
     void (*process)() = NULL;
 
