@@ -6,9 +6,16 @@ Implementing:
  - Simplex 3D noise to calculate curl
  - Ray marching to calculate cloud lighting 
 
+![](screenshots/main.png)
+
 ## Compile
 Compile and build using `CMake`. Configure using IDE or build with command line
 > `cmake --build build --config Release --target all -j 12 `
+
+## Dependancies
+- C++ 20
+- OpenGL 3
+- GLFW, GLEW, GLM(included in [external](external/))
 
 ## Instructions
 
@@ -41,10 +48,6 @@ Please don't go above the clouds, below the surface, or outside of radius as it 
 - [x] FPS ≥ 3. (See `stdout`)
 - [x] Use a user-interface to determine rain cloud density. (See above)
 
-## Dependancies
-- C++ 20
-- OpenGL 3
-- GLFW, GLEW, GLM(included in [external](external/))
 
 ## Acknowledgements
 ### Models

@@ -90,6 +90,8 @@ GLfloat prevTime = 0.0f;
 GLuint prevFrameCount = 0;
 GLuint curFrameCount = 0;
 
+int screenMultiplier = 1;
+
 // image with a depth buffer
 // (depth buffer is not always needed, but hey, we have a few GB of memory, so it won't be an issue...)
 class Image
@@ -499,7 +501,10 @@ public:
             curFrameCount++;
 
             glBindFramebuffer(GL_FRAMEBUFFER, mainFramebuffer);
-            glViewport(0, 0, globalWidth * 2, globalHeight * 2);
+#ifdef __APPLE__
+            screenMultiplier = 2;
+#endif
+            glViewport(0, 0, globalWidth * screenMultiplier, globalHeight * screenMultiplier);
 
             glm::mat4 projection = glm::perspective(glm::radians(fov), (float)globalWidth / (float)globalHeight, 0.1f, 100.0f);
             glm::vec3 glmEye = glm::vec3(globalEye.x, globalEye.y, globalEye.z);
