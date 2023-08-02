@@ -12,7 +12,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -21,13 +21,13 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						5
 					]
 				},
 				{
 					"build" : "external/glew",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-external.glew-Debug-9042a94198e8af641929.json",
+					"jsonFile" : "directory-external.glew-Release-3fb62111b16318b40ba5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
@@ -37,8 +37,8 @@
 					"source" : "external/glew",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						1,
+						2
 					]
 				},
 				{
@@ -48,7 +48,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-external.glfw-Debug-b9d98f11fa01345ea6e0.json",
+					"jsonFile" : "directory-external.glfw-Release-002c4a5e58ac9a9d44f1.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -58,13 +58,13 @@
 					"source" : "external/glfw",
 					"targetIndexes" : 
 					[
-						4
+						3
 					]
 				},
 				{
 					"build" : "external/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-external.glfw.src-Debug-6a5fd5917dd27f13f189.json",
+					"jsonFile" : "directory-external.glfw.src-Release-3fda713c41e0131b9e10.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -74,12 +74,12 @@
 					"source" : "external/glfw/src",
 					"targetIndexes" : 
 					[
-						1,
-						5
+						0,
+						4
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -92,10 +92,10 @@
 					[
 						0
 					],
-					"name" : "CS488",
+					"name" : "v-cloud",
 					"targetIndexes" : 
 					[
-						0
+						5
 					]
 				},
 				{
@@ -107,8 +107,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						1,
+						2
 					]
 				},
 				{
@@ -121,55 +121,55 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1,
-						4,
-						5
+						0,
+						3,
+						4
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 0,
-					"id" : "CS488::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CS488-Debug-b86733d7000435775c45.json",
-					"name" : "CS488",
-					"projectIndex" : 0
-				},
-				{
 					"directoryIndex" : 3,
 					"id" : "glfw::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-glfw-Debug-f1923d2a0523acc44196.json",
+					"jsonFile" : "target-glfw-Release-502b98fee01e98028997.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_shared::@6feb5b4ba403910dc561",
-					"jsonFile" : "target-libglew_shared-Debug-9c8584b2c42f14db01dd.json",
+					"jsonFile" : "target-libglew_shared-Release-7158192e5b36409cc16e.json",
 					"name" : "libglew_shared",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_static::@6feb5b4ba403910dc561",
-					"jsonFile" : "target-libglew_static-Debug-54206091a28772e30186.json",
+					"jsonFile" : "target-libglew_static-Release-8e565978a0ed6c0c0cc2.json",
 					"name" : "libglew_static",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "uninstall::@691b517da5fa0f694cd4",
-					"jsonFile" : "target-uninstall-Debug-f6aff9cac7a8a2e6e488.json",
+					"jsonFile" : "target-uninstall-Release-f6aff9cac7a8a2e6e488.json",
 					"name" : "uninstall",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "update_mappings::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-update_mappings-Debug-30ea10eb1cae3322a005.json",
+					"jsonFile" : "target-update_mappings-Release-30ea10eb1cae3322a005.json",
 					"name" : "update_mappings",
 					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v-cloud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v-cloud-Release-b9908767c1f363bb3317.json",
+					"name" : "v-cloud",
+					"projectIndex" : 0
 				}
 			]
 		}

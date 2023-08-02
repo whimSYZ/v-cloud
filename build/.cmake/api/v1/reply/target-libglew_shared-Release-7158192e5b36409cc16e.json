@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "external/glew/lib/libglewd.a"
+			"path" : "external/glew/lib/libglew-shared.dylib"
 		}
 	],
 	"backtrace" : 1,
@@ -13,9 +12,9 @@
 		[
 			"add_library",
 			"install",
+			"target_link_libraries",
 			"target_compile_definitions",
-			"target_include_directories",
-			"target_link_libraries"
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -29,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 209,
+				"line" : 218,
 				"parent" : 0
 			},
 			{
@@ -41,25 +40,25 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 240,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 213,
+				"line" : 242,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 241,
+				"line" : 228,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 240,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 242,
+				"line" : 241,
 				"parent" : 0
 			}
 		]
@@ -70,28 +69,31 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
+					"fragment" : "-O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
+					"define" : "GLEW_BUILD"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "GLEW_NO_GLU"
 				},
 				{
-					"backtrace" : 4,
-					"define" : "GLEW_STATIC"
+					"define" : "libglew_shared_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/Applications/CS488Project/external/glew/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"
 				}
@@ -103,11 +105,15 @@
 			]
 		}
 	],
-	"id" : "libglew_static::@6feb5b4ba403910dc561",
+	"id" : "libglew_shared::@6feb5b4ba403910dc561",
 	"install" : 
 	{
 		"destinations" : 
 		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
 			{
 				"backtrace" : 2,
 				"path" : "lib"
@@ -118,8 +124,28 @@
 			"path" : "/usr/local"
 		}
 	},
-	"name" : "libglew_static",
-	"nameOnDisk" : "libglewd.a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Xlinker -framework -Xlinker AGL",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "libglew_shared",
+	"nameOnDisk" : "libglew-shared.dylib",
 	"paths" : 
 	{
 		"build" : "external/glew",
@@ -144,5 +170,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

@@ -47,7 +47,7 @@ static GLuint compileShader(std::string filename, GLenum shader_type)
         char infoLog[2048];
         glGetShaderInfoLog(shader, maxLength, &maxLength, &infoLog[0]);
 
-        printf("Error when compiling shader %s:  %s\n", filename.c_str(), infoLog);
+        std::cout << "Error when compiling shader " <<  filename.c_str() << ":\n" << infoLog << std::endl;
 
         // We don't need the shader anymore.
         glDeleteShader(shader);
@@ -89,13 +89,13 @@ static GLuint newShader(std::string vertexFile, std::string fragmentFile)
         // The maxLength includes the NULL character
         char infoLog[512];
         glGetProgramInfoLog(program, maxLength, &maxLength, &infoLog[0]);
-        printf("Error when linking shaders %s %s:\n%s", vertexFile.c_str(), fragmentFile.c_str(), infoLog);
+        std::cout << "Error when linking shaders "<< vertexFile.c_str() << " " << fragmentFile.c_str() << ":\n" << infoLog << std::endl;
         // We don't need the program anymore.
         glDeleteProgram(program);
 
         return program;
     }
-    printf("Successfully linked vertex and fragment shaders : %s %s.\n", vertexFile.c_str(), fragmentFile.c_str());
+   std::cout << "Successfully linked vertex and fragment shaders " << vertexFile.c_str() << " " << fragmentFile.c_str() << std::endl;
     return program;
 }
 

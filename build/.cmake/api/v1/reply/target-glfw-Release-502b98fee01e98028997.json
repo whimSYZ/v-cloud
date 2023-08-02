@@ -90,7 +90,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC"
+					"fragment" : "-O3 -DNDEBUG -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC"
 				},
 				{
 					"backtrace" : 3,

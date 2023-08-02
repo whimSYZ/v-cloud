@@ -1,4 +1,4 @@
-/Applications/CS488Project/build/CMakeFiles/CS488.dir
+/Applications/CS488Project/build/CMakeFiles/v-cloud.dir
 /Applications/CS488Project/build/CMakeFiles/edit_cache.dir
 /Applications/CS488Project/build/CMakeFiles/rebuild_cache.dir
 /Applications/CS488Project/build/CMakeFiles/list_install_components.dir

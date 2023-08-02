@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Applications/CS488Project/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CS488.dir/all
+all: CMakeFiles/v-cloud.dir/all
 all: external/glew/all
 all: external/glfw/all
 .PHONY : all
@@ -74,7 +74,7 @@ preinstall: external/glfw/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CS488.dir/clean
+clean: CMakeFiles/v-cloud.dir/clean
 clean: external/glew/clean
 clean: external/glfw/clean
 .PHONY : clean
@@ -129,31 +129,31 @@ external/glfw/src/clean: external/glfw/src/CMakeFiles/update_mappings.dir/clean
 .PHONY : external/glfw/src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CS488.dir
+# Target rules for target CMakeFiles/v-cloud.dir
 
 # All Build rule for target.
-CMakeFiles/CS488.dir/all: external/glfw/src/CMakeFiles/glfw.dir/all
-CMakeFiles/CS488.dir/all: external/glew/CMakeFiles/libglew_static.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=1,2,3 "Built target CS488"
-.PHONY : CMakeFiles/CS488.dir/all
+CMakeFiles/v-cloud.dir/all: external/glew/CMakeFiles/libglew_static.dir/all
+CMakeFiles/v-cloud.dir/all: external/glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=28,29,30 "Built target v-cloud"
+.PHONY : CMakeFiles/v-cloud.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CS488.dir/rule: cmake_check_build_system
+CMakeFiles/v-cloud.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Applications/CS488Project/build/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CS488.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/v-cloud.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Applications/CS488Project/build/CMakeFiles 0
-.PHONY : CMakeFiles/CS488.dir/rule
+.PHONY : CMakeFiles/v-cloud.dir/rule
 
 # Convenience name for target.
-CS488: CMakeFiles/CS488.dir/rule
-.PHONY : CS488
+v-cloud: CMakeFiles/v-cloud.dir/rule
+.PHONY : v-cloud
 
 # clean rule for target.
-CMakeFiles/CS488.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/clean
-.PHONY : CMakeFiles/CS488.dir/clean
+CMakeFiles/v-cloud.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/clean
+.PHONY : CMakeFiles/v-cloud.dir/clean
 
 #=============================================================================
 # Target rules for target external/glew/CMakeFiles/libglew_static.dir
@@ -162,7 +162,7 @@ CMakeFiles/CS488.dir/clean:
 external/glew/CMakeFiles/libglew_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glew/CMakeFiles/libglew_static.dir/build.make external/glew/CMakeFiles/libglew_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glew/CMakeFiles/libglew_static.dir/build.make external/glew/CMakeFiles/libglew_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=28,29 "Built target libglew_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=25,26 "Built target libglew_static"
 .PHONY : external/glew/CMakeFiles/libglew_static.dir/all
 
 # Build rule for subdir invocation for target.
@@ -188,7 +188,7 @@ external/glew/CMakeFiles/libglew_static.dir/clean:
 external/glew/CMakeFiles/libglew_shared.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glew/CMakeFiles/libglew_shared.dir/build.make external/glew/CMakeFiles/libglew_shared.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glew/CMakeFiles/libglew_shared.dir/build.make external/glew/CMakeFiles/libglew_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=26,27 "Built target libglew_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=23,24 "Built target libglew_shared"
 .PHONY : external/glew/CMakeFiles/libglew_shared.dir/all
 
 # Build rule for subdir invocation for target.
@@ -240,7 +240,7 @@ external/glfw/CMakeFiles/uninstall.dir/clean:
 external/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/glfw.dir/build.make external/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/glfw.dir/build.make external/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target glfw"
 .PHONY : external/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -266,7 +266,7 @@ external/glfw/src/CMakeFiles/glfw.dir/clean:
 external/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=30 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Applications/CS488Project/build/CMakeFiles --progress-num=27 "Built target update_mappings"
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.

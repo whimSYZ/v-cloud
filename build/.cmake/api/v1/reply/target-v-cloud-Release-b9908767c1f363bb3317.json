@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CS488"
+			"path" : "v-cloud"
 		}
 	],
 	"backtrace" : 1,
@@ -75,7 +75,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
+					"fragment" : "-O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
 				}
 			],
 			"defines" : 
@@ -115,7 +115,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
 				}
 			],
 			"defines" : 
@@ -164,20 +164,20 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@ca12bac854c2ac6b2230"
+			"id" : "libglew_static::@6feb5b4ba403910dc561"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "libglew_static::@6feb5b4ba403910dc561"
+			"id" : "glfw::@ca12bac854c2ac6b2230"
 		}
 	],
-	"id" : "CS488::@6890427a1f51a3e7e1df",
+	"id" : "v-cloud::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -191,7 +191,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "external/glew/lib/libglewd.a",
+				"fragment" : "external/glew/lib/libglew.a",
 				"role" : "libraries"
 			},
 			{
@@ -221,8 +221,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "CS488",
-	"nameOnDisk" : "CS488",
+	"name" : "v-cloud",
+	"nameOnDisk" : "v-cloud",
 	"paths" : 
 	{
 		"build" : ".",

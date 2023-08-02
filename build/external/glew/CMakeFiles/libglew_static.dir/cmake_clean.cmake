@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libglew_static.dir/src/glew.c.o"
   "CMakeFiles/libglew_static.dir/src/glew.c.o.d"
-  "lib/libglewd.a"
-  "lib/libglewd.pdb"
+  "lib/libglew.a"
+  "lib/libglew.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

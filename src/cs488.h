@@ -86,6 +86,9 @@ glm::vec3 toneMapperColor = glm::vec3(1.0, 0.5, 1.0);
 
 // OpenGL related data (do not modify it if it is working)
 static GLuint GLFrameBufferTexture;
+GLfloat prevTime = 0.0f;
+GLuint prevFrameCount = 0;
+GLuint curFrameCount = 0;
 
 // image with a depth buffer
 // (depth buffer is not always needed, but hey, we have a few GB of memory, so it won't be an issue...)
@@ -172,7 +175,7 @@ public:
             }
         }
         delete[] buf;
-        printf("Loaded \"%s\".\n", fileName);
+        std::cout << "Loaded " << fileName << std::endl;
     }
     void save(const char *fileName)
     {
@@ -189,7 +192,7 @@ public:
         }
         stbi_write_png(fileName, width, height, 3, buf, width * 3);
         delete[] buf;
-        printf("Saved \"%s\".\n", fileName);
+        std::cout << "Saved " << fileName << std::endl;
     }
 };
 
@@ -479,13 +482,21 @@ public:
         glBindTexture(GL_TEXTURE_3D, perlworltex);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_3D, worltex);
-        
+
         while (glfwWindowShouldClose(globalGLFWindow) == GL_FALSE)
         {
             glfwPollEvents();
             globalViewDir = normalize(globalLookat - globalEye);
             globalRight = normalize(cross(globalViewDir, globalUp));
-            float currentFrameTime = (float)glfwGetTime();
+            float curTime = (float)glfwGetTime();
+
+            if (curTime - prevTime > 5.00)
+            {
+                std::cout << "Frames per second: " << (curFrameCount - prevFrameCount) / 5 << std::endl;
+                prevFrameCount = curFrameCount;
+                prevTime = curTime;
+            }
+            curFrameCount++;
 
             glBindFramebuffer(GL_FRAMEBUFFER, mainFramebuffer);
             glViewport(0, 0, globalWidth * 2, globalHeight * 2);
@@ -498,10 +509,10 @@ public:
 
             glUseProgram(skyShader);
 
-            glUniform3fv(uCamera, 1, glm::value_ptr(glmEye));
+            glUniform3fv(uCamera, 1, &glmEye[0]);
             glUniformMatrix4fv(uInvView, 1, GL_FALSE, &glm::inverse(view)[0][0]);
             glUniformMatrix4fv(uInvProj, 1, GL_FALSE, &glm::inverse(projection)[0][0]);
-            glUniform1f(uTime, currentFrameTime);
+            glUniform1f(uTime, curTime);
 
             glUniform2f(uResolution, globalWidth, globalHeight);
 

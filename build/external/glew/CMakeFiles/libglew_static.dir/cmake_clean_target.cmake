@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "lib/libglewd.a"
+  "lib/libglew.a"
 )

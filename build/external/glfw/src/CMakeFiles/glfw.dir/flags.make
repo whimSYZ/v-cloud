@@ -6,7 +6,7 @@ C_DEFINES = -D_GLFW_COCOA
 
 C_INCLUDES = -I/Applications/CS488Project/external/glfw/include -I/Applications/CS488Project/external/glfw/src -I/Applications/CS488Project/build/external/glfw/src
 
-C_FLAGSarm64 = -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall
+C_FLAGSarm64 = -O3 -DNDEBUG -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall
 
-C_FLAGS = -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall
+C_FLAGS = -O3 -DNDEBUG -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fPIC -Wall
 

@@ -294,25 +294,24 @@ vec4 raymarch(const vec3 start, const vec3 marchStep, const int depth, const vec
 void main()
 {
     vec2 screenSpaceFragmentCoordsInTextureCoords = gl_FragCoord.xy / resolution;
-	vec4 screenSpaceFragmentCoordsInClipSpace = vec4(vec2(2.0 * screenSpaceFragmentCoordsInTextureCoords - 1.0), 1.0, 1.0);
-	vec4 screenSpaceFragmentCoordsInViewSpace = invProj * screenSpaceFragmentCoordsInClipSpace;
+	vec4 screenSpaceFragmentCoordsInViewSpace = invProj * vec4(vec2(2.0 * screenSpaceFragmentCoordsInTextureCoords - 1.0), 1.0, 1.0);
     screenSpaceFragmentCoordsInViewSpace = vec4(screenSpaceFragmentCoordsInViewSpace.xy, -1.0, 0.0);
     vec3 fragmentWorldSpacePosition = (invView * screenSpaceFragmentCoordsInViewSpace).xyz;
+
 	vec3 viewDir = normalize(fragmentWorldSpacePosition);
+	vec3 cameraEarthPos = vec3(camera.x, camera.y + earthRadius, camera.z);		
 
 	vec3 ambientLightColor = preetham(normalize(vec3(0.3, 0.2, 0.0)));
     vec3 sunColor = preetham(normalize(vSunDirection));
-
-	vec3 cameraEarthPos = vec3(camera.x, camera.y + earthRadius, camera.z);		
-
+	
 	vec3 start = raySphereIntersection(cameraEarthPos, viewDir, cloudStartRadius);
 	vec3 end = raySphereIntersection(cameraEarthPos, viewDir, cloudEndRadius);
 		
 	float depth = (mix(100.0, 50.0, dot(viewDir, vec3(0.0, 1.0, 0.0))));
-	float waterColor = 1.0;
+	float waterShade = 1.0;
 
 	if(end.y < earthRadius){
-		waterColor = mix(0.8, 0.0, -(end.y - earthRadius)*0.0000008);
+		waterShade = mix(0.6, 0.0, -(end.y - earthRadius)*0.0000008);
 		viewDir.y = -viewDir.y;
 		start = raySphereIntersection(cameraEarthPos, viewDir, cloudStartRadius);
 		end = raySphereIntersection(cameraEarthPos, viewDir, cloudEndRadius);
@@ -324,7 +323,7 @@ void main()
 	vec4 raymarchResult = raymarch(start, marchStep, int(depth), sunColor, resultColor);
 	
 	resultColor = raymarchResult.a * raymarchResult.xyz + (1.0-raymarchResult.a) * resultColor;
-	resultColor *= waterColor;
+	resultColor *= waterShade;
 
 	resultColor = vec3(1.0) - exp(-resultColor.xyz * toneMapperEyeExposure);
 

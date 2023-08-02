@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CS488
+# Target rules for targets named v-cloud
 
 # Build rule for target.
-CS488: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CS488
-.PHONY : CS488
+v-cloud: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 v-cloud
+.PHONY : v-cloud
 
 # fast build rule for target.
-CS488/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/build
-.PHONY : CS488/fast
+v-cloud/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/build
+.PHONY : v-cloud/fast
 
 #=============================================================================
 # Target rules for targets named libglew_static
@@ -244,7 +244,7 @@ src/libtarga.o: src/libtarga.c.o
 
 # target to build an object file
 src/libtarga.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/libtarga.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/libtarga.c.o
 .PHONY : src/libtarga.c.o
 
 src/libtarga.i: src/libtarga.c.i
@@ -252,7 +252,7 @@ src/libtarga.i: src/libtarga.c.i
 
 # target to preprocess a source file
 src/libtarga.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/libtarga.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/libtarga.c.i
 .PHONY : src/libtarga.c.i
 
 src/libtarga.s: src/libtarga.c.s
@@ -260,7 +260,7 @@ src/libtarga.s: src/libtarga.c.s
 
 # target to generate assembly for a file
 src/libtarga.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/libtarga.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/libtarga.c.s
 .PHONY : src/libtarga.c.s
 
 src/main.o: src/main.cpp.o
@@ -268,7 +268,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -276,7 +276,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -284,7 +284,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS488.dir/build.make CMakeFiles/CS488.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/v-cloud.dir/build.make CMakeFiles/v-cloud.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -301,10 +301,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
-	@echo "... CS488"
 	@echo "... glfw"
 	@echo "... libglew_shared"
 	@echo "... libglew_static"
+	@echo "... v-cloud"
 	@echo "... src/libtarga.o"
 	@echo "... src/libtarga.i"
 	@echo "... src/libtarga.s"
